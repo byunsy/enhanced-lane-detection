@@ -297,27 +297,3 @@ def combined_threshold(img):
                        ((s_bi == 255) & (cieL_bi == 255)))] = 255
 
     return combined_gradient
-
-"""============================================================================
-                                     MAIN
-============================================================================"""
-# def main():
-
-#     # Read image
-#     img = cv2.imread("./Projects/lane_detection_2/Part2_Perspective/images/test3.jpg")
-
-#     # Check for any errors loading images
-#     if img is None:
-#         print("Error: Failed to load image.")
-#         sys.exit()
-
-#     combined_gradient = combined_threshold(img)
-
-#     cv2.namedWindow("combined_gradient")
-#     cv2.imshow("combined_gradient", combined_gradient)
-
-#     cv2.waitKey(0)
-
-
-# if __name__ == '__main__':
-#     main()

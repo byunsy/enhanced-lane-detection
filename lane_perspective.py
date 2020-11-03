@@ -49,33 +49,3 @@ def transform_lane(img):
     # cv2.polylines(warped, np.int32([dst]), True, (255, 255, 0), 3)
 
     return warped, pers, pers_inv
-
-"""============================================================================
-                                     MAIN
-============================================================================"""
-# def main():
-
-#     # Read image
-#     img = cv2.imread("./Projects/lane_detection_2/images/straight_lines1.jpg")
-
-#     # Check for any errors loading images
-#     if img is None:
-#         print("Error: Failed to load image.")
-#         sys.exit()
-
-#     warped_lane, _, _ = transform_lane(img)
-
-#     # Show original image
-#     cv2.namedWindow("image", cv2.WINDOW_NORMAL)
-#     cv2.imshow("image", img)
-
-#     # Show warped image
-#     cv2.namedWindow("warped_lane")
-#     cv2.imshow("warped_lane", warped_lane)
-
-#     cv2.waitKey(0)
-#     cv2.destroyAllWindows()
-
-
-# if __name__ == '__main__':
-#     main()

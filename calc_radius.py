@@ -150,55 +150,6 @@ def display_info(img, curve_data, offset):
     # cv2.destroyAllWindows()
 
 
-"""============================================================================
-                                     MAIN
-============================================================================"""
-# def main():
-
-#     # Read image
-#     img = cv2.imread("./ch00/lane_detection/persp_img/test2.jpg")
-
-#     # Check for any errors loading images
-#     if img is None:
-#         print("Error: Failed to load image.")
-#         sys.exit()
-
-#     # Attain height and width information about the image
-#     img_h_w = img.shape[:2]
-
-#     # Warp the lanes and binarize using the combined threshold created before
-#     warped_lane, _, pers_inv = lp.transform_lane(img)
-#     warped_lane_bi = lt.combined_threshold(warped_lane)
-
-#     # Show warped image with gradient thresholds
-#     cv2.namedWindow("warped_lane_bi")
-#     cv2.imshow("warped_lane_bi", warped_lane_bi)
-
-#     # Find curvature information from the warped image
-#     fit_polynomial, result_img = cl.find_curvature(warped_lane_bi)
-
-#     # Calculate and display the curved lanes on the warped image
-#     plot_data, fit_data = cl.find_curved_lanes( warped_lane_bi,
-#                                                 fit_polynomial,
-#                                                 result_img )
-
-#     # calculate radius of curvature for left and right line (and average)
-#     curve_data = calc_rad_of_curvature(plot_data, warped_lane_bi)
-
-#     # calculate offset from the center in meters
-#     offset_m = calc_offset(img_h_w, plot_data, fit_data)
-
-#     # Highlight the calculated lanes in green
-#     result = cl.highlight_lane(img, warped_lane_bi, pers_inv, plot_data)
-
-#     # Display the curvature and offset information on the result image
-#     display_info(result, curve_data, offset_m)
-
-
-# if __name__ == '__main__':
-#     main()
-
-
 
 """ 
 

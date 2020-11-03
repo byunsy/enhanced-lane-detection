@@ -469,36 +469,3 @@ def highlight_lane(src_img, warped_img, mat_inv, plot_data):
     # cv2.destroyAllWindows()
 
     return result
-
-"""============================================================================
-                                     MAIN
-============================================================================"""
-# def main():
-    
-#     # Read image
-#     img = cv2.imread("./ch00/lane_detection/persp_img/test9.jpg")
-
-#     # Check for any errors loading images
-#     if img is None:
-#         print("Error: Failed to load image.")
-#         sys.exit()
-
-#     # Warp the lanes and binarize using the combined threshold created before
-#     warped_lane, _, pers_inv = lp.transform_lane(img)
-#     warped_lane_bi = lt.combined_threshold(warped_lane)
-
-#     # Show warped image with gradient thresholds
-#     cv2.namedWindow("warped_lane_bi")
-#     cv2.imshow("warped_lane_bi", warped_lane_bi)
-
-#     # Find curvature information from the warped image
-#     fit_polynomial, _ = find_curvature(warped_lane_bi)
-
-#     # Calculate and display the curved lanes on the warped image
-#     plot_data = find_curved_lanes(warped_lane_bi, fit_polynomial)
-    
-#     highlight_lane(img, warped_lane_bi, pers_inv, plot_data)
-
-
-# if __name__ == '__main__':
-#     main()
