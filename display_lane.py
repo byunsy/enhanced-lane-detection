@@ -73,7 +73,7 @@ def main():
         cv2.imshow("result", result)
 
         # Write video output
-        # out.write(result)
+        out.write(result)
 
         # Breaking out of the loop
         key = cv2.waitKey(1)
