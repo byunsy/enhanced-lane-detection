@@ -39,3 +39,23 @@ Move to your specific directory. Before executing the program, a user must have 
 ```bash
 python display_lane.py
 ```
+
+## Demonstrations
+
+Camera calibration using chessboard calibration method:
+![](images/Figure_1.png)
+
+Define region of interest and perform perspective transformation for the ROI:
+![](images/Figure_2.png)
+
+Apply multiple gradient thresholds to attain meaningful pixels in white:
+![](images/Figure_3.png)
+
+First calculation of a best-fit polynomial using sliding windows in the binary image:
+![](images/Figure_4.png)
+
+Second calculation of a best-fit polynomial using margins around the first best-fit line:
+![](images/Figure_5.png)
+
+Highlight the detected lane and display the computed curvature / offset information:
+![](images/Figure_6.png)
