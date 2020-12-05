@@ -49,7 +49,7 @@ Define region of interest and perform perspective transformation for the ROI:
 ![](images/Figure_2.png)
 
 Apply multiple gradient thresholds to attain meaningful pixels in white:
-![](images/Figure_3.png)
+![](images/Figure_3.jpg)
 
 First calculation of a best-fit polynomial using sliding windows in the binary image:
 ![](images/Figure_4.png)
@@ -58,4 +58,4 @@ Second calculation of a best-fit polynomial using margins around the first best-
 ![](images/Figure_5.png)
 
 Highlight the detected lane and display the computed curvature / offset information:
-![](images/Figure_6.png)
+![](images/Figure_6.jpg)
