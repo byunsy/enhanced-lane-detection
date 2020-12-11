@@ -59,3 +59,6 @@ Second calculation of a best-fit polynomial using margins around the first best-
 
 Highlight the detected lane and display the computed curvature / offset information:
 ![](images/Figure_6.jpg)
+
+Example output
+![](images/lane_detection.gif)
