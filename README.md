@@ -1,5 +1,7 @@
 # enhanced-lane-detection
 
+![](images/lane_detection.gif)
+
 ## Description
 
 Enhanced-lane-detection is an extension of [lane-detection](https://github.com/byunsy/lane-detection) which was part of my study on computer vision for autonomous vehicles. This project goes further than simply detecting lines on a clear road and is capable of accurately detecting and highlighting lanes for different light conditions (shadows, unclear markings, etc). Additionally, it calculates and displays curvature and offset information for the vehicle at every frame.
